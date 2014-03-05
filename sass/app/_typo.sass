@@ -1,0 +1,41 @@
+h1, h2, h3, h4, h5
+  margin: 0
+  font-weight: 300
+  font-family: "Roboto", sans-serif
+
+h1
+  +font-size(3.5)
+  line-height: 1.5
+  margin-bottom: 1.5rem
+  +rem-fallback(margin-bottom, 1.3)
+
+h2
+  +font-size(2.5)
+  line-height: 1.5
+  +rem-fallback(margin-bottom, 1.5)
+
+h3
+  +font-size(2)
+  line-height: 1.5
+  +rem-fallback(margin-bottom, 1)
+
+@media #{$medium}
+  h1
+    +font-size(1.5)
+
+h3
+  +font-size(1.5)
+  +rem-fallback(margin-bottom, .5)
+
+p
+  color: #999
+  margin: 0 auto
+  +font-size(1.8)
+
+ul
+  margin: 0
+  text-align: left
+
+@media #{$medium}
+  ul
+    display: inline-block

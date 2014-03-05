@@ -1,0 +1,43 @@
+.container
+  margin: 0 auto
+  max-width: 70rem
+  width: 90%
+  position: relative
+
+.column
+  margin-bottom: 1.5rem
+  &.first
+    margin-left: -1rem
+
+@media #{$medium}
+  .column
+    float: left
+    margin: 0
+    padding-left: 1rem
+    padding-right: 1rem
+    &.full
+      width: 100%
+    &.two-thirds
+      width: 66.7%
+    &.half
+      width: 50%
+    &.third
+      width: 33.3%
+    &.fourth
+      width: 24.95%
+    &.flow-opposite
+      float: right
+
+.row
+  margin-bottom: 1rem
+  @extend .clearfix
+
+.clearfix
+  &:before
+    content: " "
+    display: table
+  &:after
+    content: " "
+    display: table
+    clear: both
+  *zoom: 1

@@ -1,0 +1,46 @@
+.cover
+  background-color: #2B2B2B
+  background-image: linear-gradient(#2B2B2B, #000000)
+  display: none
+  height: auto
+  overflow: hidden
+  position: relative
+  width: 100%
+  display: block
+  text-align: center
+  .background
+    background-size: cover
+    background-attachment: fixed
+    height: 100%
+    left: 0
+    opacity: 0.6
+    position: absolute
+    top: 0
+    width: 100%
+  header
+    left: auto
+    top: 50%
+    max-width: 760px
+    position: relative
+    +rem-fallback(padding, 8, 0, 2)
+    transform: translate(0px, -50%)
+  h1
+    color: #fff
+    font-weight: 700
+    +font-size(4)
+  h4
+    color: #fff
+    +font-size(2)
+    font-weight: 100
+    text-transform: uppercase
+@media #{$medium}
+  .cover header
+    padding: 0
+  .cover
+    height: 100%
+@media #{$large}
+  .cover
+    height: 100%
+  .cover header
+    padding: 0
+

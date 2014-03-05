@@ -1,0 +1,43 @@
+.map
+  +rem-fallback(padding, 2, 0)
+  text-align: center
+#map
+  margin-top: 80px
+  display: block
+  height: 426px
+  margin-top: 40px
+  width: 100%
+
+.contact-info
+  margin-left: -230px
+  text-align: center
+  top: -220px
+  width: 460px
+  border-radius: 5px
+  background-clip: padding-box
+  background-color: #fff
+  box-shadow: 0 1px 1px rgba(1, 1, 1, 0.2)
+  position: absolute
+  display: block
+  z-index: 100
+  left: 50%
+  padding: 30px 20px
+
+  dt
+    margin-top: 15px
+
+  h3
+    +font-size(1.5)
+    color: indianred
+
+  dt:first-child
+    margin-top: 0
+
+  dd
+    +font-size(1.5)
+    margin: 0
+
+.message
+  background-color: indianred
+  color: #fff
+  +rem-fallback(padding, 10, 0 , 4)
