@@ -394,9 +394,12 @@ ul {
 #map {
   margin-top: 80px;
   display: block;
-  height: 426px;
+  height: 250px;
   margin-top: 40px;
   width: 100%; }
+  @media (min-width: 40rem) {
+    #map {
+      height: 425px; } }
 
 .contact-info {
   text-align: center;
@@ -408,15 +411,9 @@ ul {
   display: block;
   z-index: 100;
   padding: 30px 20px;
-  width: 100%; }
+  width: 100%;
+  top: -140px; }
   @media (min-width: 40rem) {
-    .contact-info {
-      top: -220px;
-      width: 410px;
-      margin-left: -205px;
-      left: 50%;
-      width: 410px; } }
-  @media (min-width: 64rem) {
     .contact-info {
       top: -220px;
       width: 410px;

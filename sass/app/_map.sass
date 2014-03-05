@@ -4,9 +4,11 @@
 #map
   margin-top: 80px
   display: block
-  height: 426px
+  height: 250px
   margin-top: 40px
   width: 100%
+  @media #{$medium}
+    height: 425px
 
 .contact-info
   text-align: center
@@ -19,13 +21,8 @@
   z-index: 100
   padding: 30px 20px
   width: 100%
+  top: -140px
   @media #{$medium}
-    top: -220px
-    width: 410px
-    margin-left: -205px
-    left: 50%
-    width: 410px
-  @media #{$large}
     top: -220px
     width: 410px
     margin-left: -205px
