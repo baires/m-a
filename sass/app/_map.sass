@@ -9,10 +9,7 @@
   width: 100%
 
 .contact-info
-  margin-left: -205px
   text-align: center
-  top: -220px
-  width: 410px
   border-radius: 5px
   background-clip: padding-box
   background-color: #fff
@@ -20,9 +17,20 @@
   position: absolute
   display: block
   z-index: 100
-  left: 50%
   padding: 30px 20px
-
+  width: 100%
+  @media #{$medium}
+    top: -220px
+    width: 410px
+    margin-left: -205px
+    left: 50%
+    width: 410px
+  @media #{$large}
+    top: -220px
+    width: 410px
+    margin-left: -205px
+    left: 50%
+    width: 410px
   dt
     margin-top: 15px
 

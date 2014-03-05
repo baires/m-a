@@ -175,8 +175,6 @@ a {
 
 .column {
   margin-bottom: 1.5rem; }
-  .column.first {
-    margin-left: -1rem; }
 
 @media (min-width: 40rem) {
   .column {
@@ -184,6 +182,8 @@ a {
     margin: 0;
     padding-left: 1rem;
     padding-right: 1rem; }
+    .column.first {
+      margin-left: -1rem; }
     .column.full {
       width: 100%; }
     .column.two-thirds {
@@ -399,10 +399,7 @@ ul {
   width: 100%; }
 
 .contact-info {
-  margin-left: -205px;
   text-align: center;
-  top: -220px;
-  width: 410px;
   border-radius: 5px;
   background-clip: padding-box;
   background-color: white;
@@ -410,8 +407,22 @@ ul {
   position: absolute;
   display: block;
   z-index: 100;
-  left: 50%;
-  padding: 30px 20px; }
+  padding: 30px 20px;
+  width: 100%; }
+  @media (min-width: 40rem) {
+    .contact-info {
+      top: -220px;
+      width: 410px;
+      margin-left: -205px;
+      left: 50%;
+      width: 410px; } }
+  @media (min-width: 64rem) {
+    .contact-info {
+      top: -220px;
+      width: 410px;
+      margin-left: -205px;
+      left: 50%;
+      width: 410px; } }
   .contact-info dt {
     margin-top: 15px; }
   .contact-info h3 {
