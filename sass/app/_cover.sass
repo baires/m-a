@@ -1,4 +1,15 @@
 .cover
+  .background
+    background-image:  url("../images/cover/smallest.jpg")
+    background-position: 50% 50%
+    @media #{$medium}
+      background-image:  url("../images/cover/medium.jpg")
+      background-size: cover
+      background-attachment: fixed
+    @media #{$large}
+      background-image:  url("../images/cover/big.jpg")
+      background-position: 0 -18rem
+.cover
   background-color: #2B2B2B
   background-image: linear-gradient(#2B2B2B, #000000)
   display: none
@@ -9,9 +20,8 @@
   display: block
   text-align: center
   .background
-    background-size: cover
-    background-attachment: fixed
     height: 100%
+    background-repeat: no-repeat
     left: 0
     opacity: 0.6
     position: absolute
