@@ -260,7 +260,7 @@ ul {
   ul {
     display: inline-block; } }
 .cover .background {
-  background-image: url("../images/cover/smallest.jpg");
+  background-image: url("../images/cover/small.jpg");
   background-position: 50% 50%; }
   @media (min-width: 40rem) {
     .cover .background {
@@ -398,10 +398,16 @@ ul {
   100% {
     transform: scale(1); } }
 
+.place {
+  padding: 32px 0px;
+  padding: 2rem 0rem; }
+
 .map {
   padding: 32px 0px;
   padding: 2rem 0rem;
-  text-align: center; }
+  text-align: center;
+  float: left;
+  width: 100%; }
 
 #map {
   margin-top: 80px;
@@ -530,3 +536,11 @@ ul {
     top: 50%;
     width: 92px;
     z-index: 1000; }
+
+.avatar {
+  width: 200px;
+  margin-top: 1em;
+  margin-right: 1em;
+  position: relative;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px white, 0 0 0 4px #999999, 0 2px 5px 4px rgba(0, 0, 0, 0.2); }

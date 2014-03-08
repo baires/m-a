@@ -1,3 +1,13 @@
+//language
+
+var language = window.navigator.userLanguage || window.navigator.language;
+
+if (language == 'pt-BR') {
+  $('.es').hide();
+  $('.pt').show();
+};
+
+
 // Preloader
       $(window).load(function() { // makes sure the whole site is loaded
           $('#preloader').delay(150).fadeOut('slow'); // will fade out the white DIV that covers the website.
