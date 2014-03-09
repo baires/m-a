@@ -81,42 +81,34 @@ $('.numbers').waypoint(function() {
 }, { offset: 300 });
 
 // CountDown
-countIt();
+// set the date we're counting down to
+var target_date = new Date("Marc 28, 2014").getTime();
 
-function countIt(){
-    year = 2014;
-    month = 03;
-    day = 28;
-    hours = 14;
-    minutes = 00;
-    seconds = 00;
+// variables for time units
+var days, hours, minutes, seconds;
 
-    setTimeout(function(){
-    endDate = new Date(year, month, day, hours, minutes, seconds, 00);
-    thisDate  = new Date();
-    thisDate  = new Date(thisDate.getFullYear(), thisDate.getMonth() + 1, thisDate.getDay(), thisDate.getHours(), thisDate.getMinutes(), thisDate.getSeconds(), 00, 00);
+// get tag element
+var countdown = document.getElementById("countdown");
 
-    var daysLeft = parseInt((endDate-thisDate)/86400000);
-    var hoursLeft = parseInt((endDate-thisDate)/3600000);
-    var minutsLeft = parseInt((endDate-thisDate)/60000);
-    var secondsLeft = parseInt((endDate-thisDate)/1000);
+// update the tag with id "countdown" every 1 second
+setInterval(function () {
 
-    seconds = minutsLeft*60;
-    seconds = secondsLeft-seconds;
+    // find the amount of "seconds" between now and target
+    var current_date = new Date().getTime();
+    var seconds_left = (target_date - current_date) / 1000;
 
-    minutes = hoursLeft*60;
-    minutes = minutsLeft-minutes;
+    // do some time calculations
+    days = parseInt(seconds_left / 86400);
+    seconds_left = seconds_left % 86400;
 
-    hours = daysLeft*24;
-    hours = (hoursLeft-hours) < 0 ? 0 : hoursLeft-hours;
+    hours = parseInt(seconds_left / 3600);
+    seconds_left = seconds_left % 3600;
 
-    days = daysLeft;
+    minutes = parseInt(seconds_left / 60);
+    seconds = parseInt(seconds_left % 60);
 
-    startCount(days, hours, minutes,seconds);
-    }, 1000);
-}
+    // format countdown string + set tag value
+    countdown.innerHTML = days + " Días, " + hours + " horas, "
+    + minutes + " minutos, " + seconds + " segundos";
 
-function startCount(days, hours, minutes, seconds){
-    document.getElementById("countdow").innerHTML=+days+" Dias "  +hours+ " Horas " +minutes+ " Minutos " +seconds+ " Segundos";
-    countIt();
-}
+}, 1000);
