@@ -1,7 +1,18 @@
 .avatar
-    width: 200px
-    margin-top: 1em
-    margin-right: 1em
-    position: relative
-    border-radius: 50%
-    box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2)
+  +rem-fallback(width, 28)
+  margin-top: 1em
+  margin-right: 1em
+  position: relative
+  border-radius: 50%
+  box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2)
+  display: block
+  +rem-fallback(margin-top, 4)
+  +rem-fallback(margin-bottom, 4)
+  margin-left: auto
+  margin-right: auto
+  text-align: center
+  @media #{$medium}
+    +rem-fallback(width, 18)
+  @media #{$large}
+    +rem-fallback(width, 24)
+

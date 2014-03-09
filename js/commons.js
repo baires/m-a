@@ -7,7 +7,6 @@ if (language == 'pt-BR') {
   $('.pt').show();
 };
 
-
 // Preloader
       $(window).load(function() { // makes sure the whole site is loaded
           $('#preloader').delay(150).fadeOut('slow'); // will fade out the white DIV that covers the website.

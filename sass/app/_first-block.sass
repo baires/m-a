@@ -1,2 +1,12 @@
 .first-block
   +rem-fallback(padding, 2, 0)
+
+.us
+  h2
+    text-align: center
+
+.column.half
+  +rem-fallback(padding, 0, 2)
+  p
+    @media #{$medium}
+      +font-size(1.4)
