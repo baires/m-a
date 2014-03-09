@@ -34,18 +34,9 @@
           %path{d: "M82.32,7.888c-8.359-7.671-21.91-7.671-30.271,0l-5.676,5.21l-5.678-5.21c-8.357-7.671-21.91-7.671-30.27,0\r\n          c-9.404,8.631-9.404,22.624,0,31.255l35.947,32.991L82.32,39.144C91.724,30.512,91.724,16.52,82.32,7.888z", fill: "#010101"}
   .cover
     .background
-    / .background{alt: "Us",  "data-src-base" => "/images/cover", "background-image" => "<480:smallest.jpg,<768:small.jpg,<960:medium.jpg,>960:big.jpg"}
     %header.container
       %h1 Michele & Alexis
       %h4#countdow
-      .es
-        %h2
-          Español
-      .pt
-        %h2
-          Portugues
-      %p
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, moles
 
   .site
     .container
@@ -63,6 +54,15 @@
 
               %p
                 Nos encanta el buen vino, la carne, el clima de montaña, jazz & rock, mirar películas y series. También vamos siempre a recitales, ya vimos juntos a Bob Dylan, Hugh Laurie, Dave Matthews Band, Foo Fighters, Dancing Mood, Gilberto Gil, entre otros!
+          .pt
+            %p
+              Nos conhecemos em 2011, trabalhávamos na mesma empresa e todos os dias brigávamos por conta do ar condiconado, problema que temos até hoje.
+
+            %p
+              Nos tornamos amigos até que começamos a sair e desde esse momento não nos separamos mais. Somos melhores amigos, sócios em uma start up chamada Obsequio, cúmplices e confidentes. Tratamos de apoiar-nos mutuamente ante todos os obstáculos que a vida nos impõe e agora daremos um passo mais e seremos marido e mulher.
+
+            %p
+              A gente adora um bom vinho, carne, o clima de montanha, jazz & rock, assistir séries e filmes. Também vamos sempre a shows, já vimos juntos Bob Dylan, Hugh Laurie, Dave Matthews Band, Foo Fighters, Dancing Mood, Gilberto Gil, entre outros!
 
       .row.us
         .column.half.first
@@ -73,6 +73,10 @@
               33 años, Lic. en Diseño de Indumentaria, posgrado en Marketing, posee las habilidades de limpiar, lavar y cocinar, pero no sabe planchar
               aún asi se siente lista para casarse y se considera la mejor novia del mundo, ocupa 3/4 de la cama, además es la contadora de la pareja y siempre se queda dormida en medio de las películas, pero todos los días se despierta temprano y de buen humor.
 
+          .pt
+            %p
+              33 anos, formada em Design de Moda, pós-graduada em Marketing. Possui habilidades para limpar, lavar e cozinhar, mas não sabe passar roupa, mesmo assim, sente-se preparada para se casar e se considera a melhor namorada do mundo.  Exerce a função de contadora da casa, ocupa 3/4 da cama, sempre dorme no meio dos filmes, mas todos os dias acorda cedo e de bom humor.
+
         .column.half
           %img.avatar{:src => "images/alexis.jpg", :alt => "Alexis"}
           %h2 Alexis
@@ -80,6 +84,10 @@
             %p
               31 años, Lic en Comercio Exterior, pero trabaja como Designer de software y producto, posee las habilidades de dormir hasta tarde, tomar Fernet, bajar y actualizar la biblioteca de series y películas para entretener a la pareja.
               a veces cocina y dice que sabe planchar aunque nunca lo haya demostrado, además es un gran asador y especialista en robar sábanas.
+
+          .pt
+            %p
+              31 anos, formado em Comércio Exterior, porém trabalha como Designer de software e produto. Possui as habilidades de dormir até tarde, tomar Fernet, baixar e atualizar as séries e filmes para entreter o casal. As vezes cozinha e diz que sabe passar roupa, mas nunca demostrou, além disso, é um grande churrasqueiro e um especialista em roubar lençóis.
 
 
     .images
@@ -229,19 +237,19 @@
         .column.full{"data-scrollreveal" => "enter bottom but wait .5s"}
           %img{:src => "images/gift.png", :alt => ""}
       .row
-        .es.column
-          %h2 Regalos es
+        .column.half
+          %h2 Regalos
           %p
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, voluptate, praesentium cumque temporibus quasi saepe eos eveniet dolorem expedita provident similique suscipit reprehenderit autem omnis accusamus vel recusandae tempora itaque!
+            Si insisten en hacernos un regalo, basta clickear en el botón de abajo y van a encontrar la forma de hacerlo.
             %p{"data-scrollreveal" => "enter bottom but wait .5s"}
-              %a.button{:href => "http://obsequ.io/c/9"} Obsequio
+              %a.button{:href => "http://obsequ.io/c/9"} Regalos
 
-        .pt.column
-          %h2 Regalos pT
+        .column.half
+          %h2 Presentes
           %p
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, voluptate, praesentium cumque temporibus quasi saepe eos eveniet dolorem expedita provident similique suscipit reprehenderit autem omnis accusamus vel recusandae tempora itaque!
+            Se insistirem em presentear-nos, basta clicar no botão abaixo e encontrarão a forma de realizá-lo.
             %p{"data-scrollreveal" => "enter bottom but wait .5s"}
-              %a.button{:href => "http://obsequ.io/c/9"} Obsequio
+              %a.button{:href => "http://obsequ.io/c/9"} Presentes
 
 
   %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"}
