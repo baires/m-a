@@ -78,7 +78,7 @@ $('.numbers').waypoint(function() {
   number1.start();
   number2.start();
   number3.start();
-}, { offset: 300 });
+}, { offset: 100 });
 
 // CountDown
 // set the date we're counting down to
